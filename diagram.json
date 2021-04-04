@@ -1,0 +1,160 @@
+{
+    "version": 1,
+    "author": "Chang Liu",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "type": "wokwi-arduino-uno",
+            "id": "uno",
+            "top": 309.09,
+            "left": 40.66,
+            "rotate": 0,
+            "hide": false,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-lcd1602",
+            "id": "lcd",
+            "top": 541.03,
+            "left": 56.35,
+            "rotate": 0,
+            "hide": false,
+            "attrs": {
+                "pins": "i2c"
+            }
+        },
+        {
+            "type": "wokwi-membrane-keypad",
+            "id": "keypad",
+            "top": -59.57,
+            "left": 107.69,
+            "rotate": 0,
+            "hide": false,
+            "attrs": {
+                "connector": true
+            }
+        }
+    ],
+    "connections": [
+        [
+            "uno:GND.2",
+            "lcd:GND",
+            "black",
+            [
+                "v14",
+                "*",
+                "h-20"
+            ]
+        ],
+        [
+            "uno:5V",
+            "lcd:VCC",
+            "red",
+            [
+                "v18",
+                "*",
+                "h-16"
+            ]
+        ],
+        [
+            "uno:A4",
+            "lcd:SDA",
+            "green",
+            [
+                "v22",
+                "*",
+                "h-12"
+            ]
+        ],
+        [
+            "uno:A5",
+            "lcd:SCL",
+            "blue",
+            [
+                "v26",
+                "*",
+                "h-8"
+            ]
+        ],
+        [
+            "keypad:R1",
+            "uno:9",
+            "red",
+            [
+                "*",
+                "*",
+                "*"
+            ]
+        ],
+        [
+            "keypad:R2",
+            "uno:8",
+            "red",
+            [
+                "*",
+                "*",
+                "*"
+            ]
+        ],
+        [
+            "keypad:R3",
+            "uno:7",
+            "red",
+            [
+                "*",
+                "*",
+                "*"
+            ]
+        ],
+        [
+            "keypad:R4",
+            "uno:6",
+            "red",
+            [
+                "*",
+                "*",
+                "*"
+            ]
+        ],
+        [
+            "keypad:C1",
+            "uno:5",
+            "red",
+            [
+                "*",
+                "*",
+                "*"
+            ]
+        ],
+        [
+            "keypad:C2",
+            "uno:4",
+            "red",
+            [
+                "*",
+                "*",
+                "*"
+            ]
+        ],
+        [
+            "keypad:C3",
+            "uno:3",
+            "red",
+            [
+                "*",
+                "*",
+                "*"
+            ]
+        ],
+        [
+            "keypad:C4",
+            "uno:2",
+            "red",
+            [
+                "*",
+                "*",
+                "*"
+            ]
+        ]
+    ]
+}
