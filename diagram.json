@@ -6,8 +6,8 @@
         {
             "type": "wokwi-arduino-uno",
             "id": "uno",
-            "top": 309.09,
-            "left": 40.66,
+            "top": 305.35,
+            "left": 75.65,
             "rotate": 0,
             "hide": false,
             "attrs": {}
@@ -26,12 +26,78 @@
         {
             "type": "wokwi-membrane-keypad",
             "id": "keypad",
-            "top": -59.57,
-            "left": 107.69,
+            "top": -64.53,
+            "left": 129.95,
             "rotate": 0,
             "hide": false,
             "attrs": {
                 "connector": true
+            }
+        },
+        {
+            "type": "wokwi-led",
+            "id": "red",
+            "top": 157.1,
+            "left": -15.3,
+            "rotate": 0,
+            "hide": false,
+            "attrs": {
+                "color": "red"
+            }
+        },
+        {
+            "type": "wokwi-led",
+            "id": "green",
+            "top": 157.78,
+            "left": -215.99,
+            "rotate": 0,
+            "hide": false,
+            "attrs": {
+                "color": "green"
+            }
+        },
+        {
+            "type": "wokwi-led",
+            "id": "blue",
+            "top": 157.78,
+            "left": -114.56,
+            "rotate": 0,
+            "hide": false,
+            "attrs": {
+                "color": "blue"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "redr",
+            "top": 187.01,
+            "left": 21.16,
+            "rotate": 0,
+            "hide": false,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "greenr",
+            "top": 193.9,
+            "left": -175.59,
+            "rotate": 0,
+            "hide": false,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "bluer",
+            "top": 188.19,
+            "left": -81.47,
+            "rotate": 0,
+            "hide": false,
+            "attrs": {
+                "value": "220"
             }
         }
     ],
@@ -78,83 +144,105 @@
         ],
         [
             "keypad:R1",
-            "uno:9",
+            "uno:12",
             "red",
-            [
-                "*",
-                "*",
-                "*"
-            ]
+            []
         ],
         [
             "keypad:R2",
             "uno:8",
             "red",
-            [
-                "*",
-                "*",
-                "*"
-            ]
+            []
         ],
         [
             "keypad:R3",
             "uno:7",
             "red",
-            [
-                "*",
-                "*",
-                "*"
-            ]
+            []
         ],
         [
             "keypad:R4",
             "uno:6",
             "red",
-            [
-                "*",
-                "*",
-                "*"
-            ]
+            []
         ],
         [
             "keypad:C1",
             "uno:5",
             "red",
-            [
-                "*",
-                "*",
-                "*"
-            ]
+            []
         ],
         [
             "keypad:C2",
             "uno:4",
             "red",
-            [
-                "*",
-                "*",
-                "*"
-            ]
+            []
         ],
         [
             "keypad:C3",
             "uno:3",
             "red",
-            [
-                "*",
-                "*",
-                "*"
-            ]
+            []
         ],
         [
             "keypad:C4",
             "uno:2",
             "red",
-            [
-                "*",
-                "*",
-                "*"
-            ]
+            []
+        ],
+        [
+            "uno:9",
+            "redr:2",
+            "red",
+            []
+        ],
+        [
+            "uno:10",
+            "greenr:2",
+            "green",
+            []
+        ],
+        [
+            "uno:11",
+            "bluer:2",
+            "blue",
+            []
+        ],
+        [
+            "red:A",
+            "redr:1",
+            "red",
+            []
+        ],
+        [
+            "green:A",
+            "greenr:1",
+            "green",
+            []
+        ],
+        [
+            "blue:A",
+            "bluer:1",
+            "blue",
+            []
+        ],
+        [
+            "uno:GND.1",
+            "red:C",
+            "red",
+            []
+        ],
+        [
+            "uno:GND.1",
+            "green:C",
+            "green",
+            []
+        ],
+        [
+            "uno:GND.1",
+            "blue:C",
+            "blue",
+            []
         ]
     ]
 }
